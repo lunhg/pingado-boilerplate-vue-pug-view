@@ -10,7 +10,7 @@ v-card
       br
       h3 {{ model.subtitle }}
       br
-      span {{ model.text }}
+      span {{ model.presentation_text }}
 
-      router-link(:to='{path:"model/"+model.id}')
-        v-btn(color="primary")= __('READ MORE')
+      router-link(:to='{path:"model/"+model.id+"/read"}')
+        v-btn(color="primary")= __('READ_MORE')
