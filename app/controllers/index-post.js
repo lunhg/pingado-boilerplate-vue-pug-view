@@ -8,7 +8,7 @@ module.exports = function(req, res){
     let layout_path = path.join(__dirname, '../..', 'app/views/layout.vue');
 
     // Setup some vue 'one-page' routes to pass to Vue-Router
-    let layout_options = require(__path.join(__dirname, '..', 'routes', 'vue'))(res);
+    let layout_options = require(path.join(__dirname, '..', '..', 'routes', 'vue'))(res);
 
     // After compile layout, compile all view components defined with extension .vue
     compile(layout_path, layout_options).then(function(layout){
