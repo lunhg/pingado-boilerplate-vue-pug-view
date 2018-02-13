@@ -6,6 +6,7 @@ let foreach = function(o, callback){
 
 class App {
     constructor (opt){
+	opt.data.drawer = true
 	foreach(opt.routes, function(e,i,a){
 	    e.props = true
 	    e.component.props = []
@@ -28,7 +29,6 @@ class App {
 	    },
 	    template:opt.template,
 	    data: function(){
-		opt.data.drawer = true;
 		return opt.data
 	    }
 	})
