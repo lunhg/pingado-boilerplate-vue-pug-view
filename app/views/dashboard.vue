@@ -8,8 +8,8 @@ v-card
   v-card-title(primary-title)
     div
       br
-      h3= __('YOUR_APP_HAS_A_BASIC_SETUP_CONFIGURED WITH_SUCCESS')+': '
+      h3= __('YOUR_APP_HAS_A_BASIC_SETUP_GENERATED_WITH_SUCCESS]')+': '
       br
-      span= __('PLEASE_REFFERS_TO_PINGADO_GUIDE_TO_CUSOMIZE_YOUR_APPLICATION')
+      span= __('PLEASE_REFER_TO_PINGADO_GUIDE_TO_CUSTOMIZE_YOUR_APPLICATION')
       br
       a(href="https://pingado.tk") https://pingado.tk
