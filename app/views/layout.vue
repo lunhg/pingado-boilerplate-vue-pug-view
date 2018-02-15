@@ -15,8 +15,8 @@ v-app
           v-icon public
         v-list-tile-content
           v-list-tile-title
-             - for(var e in __list__ = ['en', 'pt-br', 'es'])
-               a(href='/?lang='+__list__[e])= __list__[e] + (__list__[e] === 'es' ? '' : ', ')
+             - for(var e in __list__ = ['en', 'pt-br'])
+               a(href='/'+__list__[e])= __list__[e] + (__list__[e] === 'es' ? '' : ', ')
 
   v-toolbar(app dark fixed color="indigo")
     v-toolbar-side-icon(@click.stop="drawer = !drawer")
